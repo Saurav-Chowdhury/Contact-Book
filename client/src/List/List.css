@@ -1,0 +1,90 @@
+.top h3 span{
+    color: red;
+}
+.top{
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 5%;
+    color: white;
+}
+.searchBar{
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+}
+
+.searchBar input{
+    width: 22em;
+}
+
+.searchBar input::placeholder{
+    font-size: 18px;
+    padding: 2%;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.userlist{
+    display: flex;
+    margin: 4%;
+    gap: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card{
+    color: #bebebe;
+    width: 18rem;
+    margin: 2%;
+    border: 4px solid #191919;
+    box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5),
+        inset 4px 4px 10px rgba(0, 0, 0, 0.5),
+        inset -4px -4px 10px rgba(67, 67, 67, 0.3),
+        4px 4px 10px rgba(0, 0, 0, 0.3);
+    background: #282828;
+    padding: 1%;
+    font-size: 20px;
+    transition: width 0.5s linear ;
+}
+
+.card:hover{
+    width: 20rem;
+}
+
+.user-content{
+    width: 18%;
+    box-shadow: 7px 7px 11px grey;
+    background: rgb(235, 226, 226);
+    overflow: auto;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+.img img{
+    width: 100%;
+}
+
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+}
+
+.det{
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4%;
+}
+.card button{
+    box-shadow: 6px 6px 150px white;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
