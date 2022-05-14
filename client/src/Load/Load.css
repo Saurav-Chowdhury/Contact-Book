@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#loading{
+    background: black;
+    background-image: url("https://media0.giphy.com/media/N256GFy1u6M6Y/giphy.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: 166px;
+    display: block;
+}

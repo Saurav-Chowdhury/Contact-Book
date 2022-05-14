@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './Add.css';
 import axios from 'axios';
+import Load from '../Load/Load';
 
 function Add() {
     const [color,setColor]=useState('red')
@@ -9,6 +10,17 @@ function Add() {
     const [phone,setPhone]=useState('');
 
     //namehandler
+    useEffect(()=>{
+        getloader();
+    },[])
+
+    const getloader=()=>{
+        setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
+            document.getElementById("loading").style.transition="all 0.7s";
+        },1700)
+    }
+    window.addEventListener("load",getloader);
 
     const nameChange=(e)=>{
         setName(e.target.value)
@@ -43,6 +55,9 @@ function Add() {
     }
     return (
         <>
+            <div id="loading">
+            
+            </div>
             <div className="form">
                 <form>
                     <div className="form-content">

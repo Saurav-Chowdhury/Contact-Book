@@ -19,9 +19,22 @@ function List() {
         setData(list);
     }
     useEffect(()=>{
-        getData()
+        getloader();
+        getData();
     },[])
+
+    const getloader=()=>{
+        setTimeout(()=>{
+            document.getElementById("loading").style.display="none";
+            document.getElementById("loading").style.transition="all 0.7s";
+        },1700)
+    }
     return ( <>
+
+            <div id="loading">
+            
+            </div>
+
         <div className="top">
             <h3>There are currently  {(data.length==0)?<span>No Contacts!!</span>:data.length+" Contacts"}</h3>
         </div>
